@@ -1,0 +1,29 @@
+/* PLANTOPIA - external stylesheet (Practical 4: selectors, box model, colours) */
+/* Palette */
+:root{--deep:#163D2A;--green:#3F704D;--sage:#A8B99A;--cream:#F5F0DF;--beige:#E6D9BD;--brown:#8A684A;--yellow:#E8D58A;}
+body{background:var(--cream);color:var(--deep);font-family:Georgia,"Times New Roman",serif;line-height:1.6;}
+h1,h2,h3,h4,.navbar-brand{font-family:"Trebuchet MS",Arial,sans-serif;font-weight:bold;}
+.navbar{background:var(--deep);}
+.navbar-brand{color:var(--yellow)!important;font-size:1.4rem;}
+.nav-link{color:var(--cream)!important;}
+.nav-link:hover{color:var(--yellow)!important;}
+/* Hero */
+.hero{background:linear-gradient(160deg,var(--deep),var(--green));color:var(--cream);padding:90px 0;text-align:center;position:relative;overflow:hidden;}
+.hero h1{font-size:3rem;}
+.sprout{display:inline-block;font-size:4rem;}
+.btn-plant{background:var(--yellow);color:var(--deep);border:none;border-radius:30px;padding:10px 28px;font-weight:bold;}
+.btn-plant:hover{background:var(--beige);color:var(--deep);}
+/* Cards */
+.card{border:none;border-radius:20px;background:#fff;box-shadow:0 4px 12px rgba(22,61,42,.15);height:100%;}
+.emoji{font-size:3.5rem;background:var(--beige);border-radius:50%;width:90px;height:90px;line-height:90px;text-align:center;margin:20px auto 0;}
+section{padding:50px 0;}
+.alt{background:var(--beige);}
+.note{background:var(--yellow);border-radius:12px;padding:12px 18px;}
+.table{background:#fff;}
+.table thead{background:var(--green);color:#fff;}
+details{background:#fff;border-radius:14px;padding:14px 18px;margin-bottom:12px;box-shadow:0 2px 8px rgba(22,61,42,.12);}
+summary{font-weight:bold;font-size:1.1rem;cursor:pointer;}
+.plant-box:target{outline:4px solid var(--yellow);}
+footer{background:var(--deep);color:var(--cream);padding:30px 0;}
+footer a{color:var(--yellow);}
+@media (max-width:576px){.hero h1{font-size:2rem;}}
